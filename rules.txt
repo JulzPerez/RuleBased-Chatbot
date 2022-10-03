@@ -1,2 +1,4 @@
-[A-Za-z\s?!\.]*[H|hello][A-Za-z\s?!\.] greeting
-[A-Za-z\s?!\.]*[Tabang][A-Za-z\s?!\.] goodbye
+(H|ello) start
+(\bU|unsa).*(\brequirement).* requirement
+(\bA|aha).*(\bmakit-an).*(\brequirement).* req_links
+(\bL|ink).*(\brequirement).* req_links

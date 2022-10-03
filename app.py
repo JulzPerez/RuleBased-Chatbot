@@ -5,8 +5,8 @@ import random
 
 data_file = open('data.json').read()
 intents_json = json.loads(data_file)
-#rules_dict = {1:re.compile("[A-Za-z\s?!\.]*[H|hello][A-Za-z\s?!\.]")}
 
+#read regex rules from files
 def loadRules():
     myFile = open('rules.txt','r')
     rLine = myFile.readlines()
@@ -20,16 +20,18 @@ def loadRules():
 
     return (rules_dict) 
 
+#get corresponding tag from triggered regex rule
 def getTag(msg): 
-    rules = loadRules()
-    i=1
+    rules=loadRules()  
     for i in rules.keys():
-        if re.match(rules[i]['regex'],msg):
-            tag=(rules[i]['tag'])
+        pattern = rules[i]['regex']
+        if(re.search(pattern,msg)):
+            intent = rules[i]['tag']
             break
         
-    return tag
+    return intent
 
+#get response based on intent (i.e. tag associated with user message)
 def getResponse(msg):
     tag = getTag(msg)
     result = msg
@@ -39,6 +41,7 @@ def getResponse(msg):
             result = random.choice(i['responses'])
             break
     return result
+
 
 def chatbot_response(msg):
     res = getResponse(msg)

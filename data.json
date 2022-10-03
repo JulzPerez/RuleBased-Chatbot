@@ -1,23 +1,18 @@
 {"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
+        {"tag": "start",
+         "responses": ["Hello, kumusta na ka? Unsa'y pangutana nimo?", "Hello! Unsa akong ma-alagad nimo?", "Wazzup Wazzup!!!"]
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
          "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
          "context": [""]
         },
-        {"tag": "thanks",
+        {"tag": "requirement",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
+         "responses": ["Andama ning mga dokumento nga kinahanglan arun maka apply ka: \na. Application Form nga naa passport-size nga picture. Ma-download nimo ang Application Form dinhi [insert link] Concert Form. Ma-download ang form dinhi [insert link] b. Transcript of Records c. Cumulative Grade Point Average (CGPA) or Grade Weighted Average (GWA) nga gi-certify sa school register kung aha ka ni-graduate kung kini wala nakabutang sa imong TOR. d. Birth Certificate e. Marriage Certificate kung minyo na. f. Transfer Credential o Honorable Dismissal. g. Duha ka Recommendation Letters nga gikan sa imong employer, Human Resource Officer o mga professors sa una. h. Kopya sa imong research output."]
         },
-        {"tag": "noanswer",
-         "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
+        {"tag": "req_links",
+         "responses": ["Makit-an ang mga requirements sa link nga ni: "]
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
