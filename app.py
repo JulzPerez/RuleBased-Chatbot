@@ -3,8 +3,10 @@ import re
 import random
 
 
+
 data_file = open('data.json').read()
 intents_json = json.loads(data_file)
+
 
 #read regex rules from files
 def loadRules():
@@ -30,6 +32,7 @@ def getTag(msg):
             break
         
     return intent
+
 
 #get response based on intent (i.e. tag associated with user message)
 def getResponse(msg):
