@@ -22,7 +22,7 @@ def loadRules():
 
 #get corresponding tag from triggered regex rule
 def getTag(msg): 
-    rules=loadRules()  
+    rules=loadRules() #will load Rules each time, optimize this 
     for i in rules.keys():
         pattern = rules[i]['regex']
         if(re.search(pattern,msg)):

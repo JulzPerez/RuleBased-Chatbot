@@ -1,4 +1,8 @@
+\A(R|requirements?)\b|((\bU|unsa)|(\bL|list).*\brequirement.*) requirement
+(\bA|aha|\bL|link).*\brequirement.* req_links
+((\bW|wala|\bK|kulang).*\b((TOR)|(tor)|(T|transcript)|(b|Birth)|(r|Recommendation)|(R|requirement)).*) lacking_req
+((\bA|aha|\bS|submit).*\bR|recommendation).* submit_reco
+\A(A|a)\b status_a
+\A(B|b)\b status_b
+\A(C|c)\b status_c
 (H|ello) start
-(\bU|unsa).*(\brequirement).* requirement
-(\bA|aha).*(\bmakit-an).*(\brequirement).* req_links
-(\bL|ink).*(\brequirement).* req_links
