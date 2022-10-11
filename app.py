@@ -3,10 +3,8 @@ import re
 import random
 
 
-
 data_file = open('data.json').read()
 intents_json = json.loads(data_file)
-
 
 #read regex rules from files
 def loadRules():
@@ -32,7 +30,6 @@ def getTag(msg):
             break
         
     return intent
-
 
 #get response based on intent (i.e. tag associated with user message)
 def getResponse(msg):
@@ -62,7 +59,7 @@ def index():
 @app.route("/getResponse")
 def get_bot_response():
     userText = request.args.get('msg')
-    return chatbot_response(userText)
+    return chatbot_response(userText.lower())
 
 #if __name__ == "__main__":
 #    app.run()

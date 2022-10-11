@@ -9,22 +9,40 @@
          "responses": ["Hello, Returnee? Unsa'y pangutana nimo?", "Hello, Returneed! Unsa akong ma-alagad nimo?", "Wazzup Wazzup, Returnee!!!"]
         },
         {"tag": "start",
-         "responses": ["Hello, kumusta na ka? Unsa'y pangutana nimo?", "Hello! Unsa akong ma-alagad nimo?", "Wazzup Wazzup!!!"]
+         "responses": ["Hello, kumusta na ka? Unsa'y pangutana nimo?", "Hello! Unsa akong ma-alagad nimo?"]
         },
         {"tag": "goodbye",
          "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
         },
-        {"tag": "requirement",
-         "responses": ["Andama ning mga dokumento nga kinahanglan arun maka apply ka: a. Application Form nga naa passport-size nga picture. Ma-download nimo ang Application Form dinhi [insert link] Concert Form. Ma-download ang form dinhi [insert link] b. Transcript of Records c. Cumulative Grade Point Average (CGPA) or Grade Weighted Average (GWA) nga gi-certify sa school register kung aha ka ni-graduate kung kini wala nakabutang sa imong TOR. d. Birth Certificate e. Marriage Certificate kung minyo na. f. Transfer Credential o Honorable Dismissal. g. Duha ka Recommendation Letters nga gikan sa imong employer, Human Resource Officer o mga professors sa una. h. Kopya sa imong research output."]
+        {"tag": "new_requirement",
+         "responses": ["Andama ning mga dokumento nga kinahanglan arun maka apply ka: \na. Application Form nga naa passport-size nga picture. Ma-download nimo ang Application Form dinhi [insert link] Concert Form. Ma-download ang form dinhi [insert link] \nb. Transcript of Records \nc. Cumulative Grade Point Average (CGPA) or Grade Weighted Average (GWA) nga gi-certify sa school register kung aha ka ni-graduate kung kini wala nakabutang sa imong TOR. \nd. Birth Certificate \ne. Marriage Certificate kung minyo na. \nf. Transfer Credential o Honorable Dismissal. \ng. Duha ka Recommendation Letters nga gikan sa imong employer, Human Resource Officer o mga professors sa una. \nh. Kopya sa imong research output."]
         },
-        {"tag": "req_links",
+        {"tag": "new_reqlinks",
          "responses": ["Makit-an ang mga requirements sa link nga ni: https://www.dlsu.edu.ph/admissions/graduate/requirements-checklist-for-local-applicants/"]
         },
-        {"tag": "lacking_req",
+        {"tag": "new_lackingreq",
          "responses": ["Gawas sa Honorable Dismissal o Transfer credential, kinahanglan nga kumpletuhon na daan ang mga requirements ayha kini i-sumiter. Dili atimanun ang imong application kung naa’y kulang."]
         },
-        {"tag": "submit_reco",
-         "responses": ["Ang recommendation forms kay kinahanglan i-sumiter sa Recommender/Rater sa Office of Scholarships and Admissions pinaagi sa pag-upload sa submission link https://bit.ly/3LfxlTG Ang aplikante na ang maigo nga makigkomunikar sa iyang mga Recommenders or Raters."]
-        }  
+        {"tag": "new_submitreco",
+         "responses": ["Ang recommendation forms kay kinahanglan i-sumiter sa Recommender/Rater sa Office of Scholarships and Admissions pinaagi sa pag-upload sa submission link https://bit.ly/3LfxlTG \nAng aplikante na ang maigo nga makigkomunikar sa iyang mga Recommenders or Raters."]
+        },
+        {"tag": "new_applicationperiod",
+         "responses": ["Ang Application Period para sa Term 2, AY022-2023 kay magsugod ug September 17, 2022 hangtud October 15, 2022."]
+        },
+        {"tag": "new_applicationprocess",
+         "responses": ["Andama sa daan ang imong mga requirements ug i-sumiter kini pinaagi sa submission link nga ni: \nhttps://bit.ly/3TU1L1I. \nTanang upload kay ihatag sa screening committee sa department arun ma-review nila. Ang review kay himuon usa ka semana paghuman sa deadline sa application."]
+        },
+        {"tag": "new_applicationfee",
+         "responses": ["Bayri ang Non-Refundable nga Application Fee nga 600.00. Para sa proseso sa pagbayad, sunda ni nga mga instructions. [insert link]"]
+        },
+        {"tag": "new_examresult",
+         "responses": ["Ang result sa examination para sa 2nd Term AY 2022-2023 kay ipadala sa imong email sa December 2022."]
+        },
+        {"tag": "new_exam",
+         "responses": ["Tanang aplikante kay kinahanglan mukuha sa DLSU Graduate Admission Test (DGAT) nga pagahimuon sa De La Salle University. Walay online exam nga kapilian. \nIg sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug imong test permit."]
+        },
+        {"tag": "new_examschedule",
+         "responses": ["Ig sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug ang imong test permit."]
+        }
    ]
 }
