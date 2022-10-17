@@ -43,6 +43,18 @@
         },
         {"tag": "new_examschedule",
          "responses": ["Ig sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug ang imong test permit."]
+        },
+        {"tag": "new_qualification",
+         "responses": ["Ginadawat sa programa ang mga aplikante nga adunay degree sa MS sa Computer Science nga adunay thesis ug labing menos usa ka research paper nga gi-publish sa usa ka nasyonal o internasyonal nga refereed CS conference."]
+        },
+        {"tag": "new_notmscs",
+         "responses": ["Ang mga degree sa master gikan sa mosunod nga mga programa mahimong konsiderahon alang sa pagsulod sa Ph.D. in Computer Science (ang uban mahimong konsiderahon sa usa ka case-to-case basis) pagkahuman sa gikinahanglan nga remedial coursework/s: \n1. MS in Computer Science (MSCS) nga wala’y thesis \n2. Master in Computer Science (MCS) \n3. MS in Information Technology (MSIT) \n4. BSCS with an MS degree sa ubang fields \n5. BS and MS degree sa ubang field pero naay IT experience"]
+        },
+        {"tag": "new_confirmation",
+         "responses": ["Kini ang proseso sa pagmatuod sa imong interes nga magpalista sa Ph.D. in Computer Science. \nBayri ang P1000.00 nga non-refundable Confirmation Fee. \nI-sumiter ang hard copy sa Admission Requirement sa Office of Scholarships and Admissions. \nKuha-a ang Confirmation Kit nga naglangkob sa Department Recommendation Form ug Pre-enrollment Guidelines. Nakabutang ang mga kurso nga pwede nimo i-enroll karung termino sa Department Recommendation form."]
+        },
+        {"tag": "new_defer",
+         "responses": ["Ang mga aplikante nga nakahukom sa paglangan sa pagpalista gihangyo sa \na.Likayan ang pag-apil sa online nga pagrehistro o pag-enrol sa bisan unsang kurso \nb.Basaha ang Graduate Reprocessing Procedures ug sunda ang mga instruksiyon nga nakasulat niini nga link:https://www.dlsu.edu.ph/admissions/graduate/graduatereprocessing-procedures \nAng pagkapakyas sa pagbuhat sa bisan unsa niini mahimong moresulta sa dugang nga mga bayranan ug bayad sa silot."]
         }
    ]
 }

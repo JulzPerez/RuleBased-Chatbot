@@ -1,3 +1,8 @@
+(.*(defer).*)|(.*)?(dili).*(enroll?).* new_defer
+.*(confirm)|(confirmation)|(kumpirma).* new_confirmation
+.*(letter).*(acceptance).* new_confirmation
+(.*)?((dili)|(lahi)|(lain)).*((mscs)|(masters?)|(kurso)|(ms)).* new_notmscs
+.*(qualifications?)|(qualify).* new_qualification
 \b(ganus-?a).*(entrance\s)?(exam(ination)?).* new_examschedule
 (entrance\s)?(exam(ination)?).* new_exam
 .*(release)|(hatag).*\b(result) new_examresult
