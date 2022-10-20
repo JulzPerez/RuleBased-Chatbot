@@ -6,40 +6,43 @@
          "responses": ["Hello, Continuing Student? Unsa'y pangutana nimo?", "Hello, Continuing Student! Unsa akong ma-alagad nimo?", "Wazzup Wazzup, mu-enroll na ka?"]
         },
         {"tag": "status_c",
-         "responses": ["Hello, Returnee? Unsa'y pangutana nimo?", "Hello, Returneed! Unsa akong ma-alagad nimo?", "Wazzup Wazzup, Returnee!!!"]
+         "responses": ["Hello, Returnee? Unsa'y pangutana nimo?", "Hello, Returnee! Unsa akong ma-alagad nimo?", "Wazzup Wazzup, Returnee!!!"]
         },
         {"tag": "start",
          "responses": ["Hello, kumusta na ka? Unsa'y pangutana nimo?", "Hello! Unsa akong ma-alagad nimo?"]
         },
         {"tag": "goodbye",
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+         "responses": ["Unta nakatubag ko sa imong mga pangutana. Salamat!", "Sa sunod na pud. Salamat!", "Balik na pud puhon."]
+        },
+        {"tag": "misc",
+         "responses": ["Naa pa ba ka lain nga pangutana?", "Palihog pahibaloa ko kung naa pa kay laing mga pangutana."]
         },
         {"tag": "new_requirement",
-         "responses": ["Andama ning mga dokumento nga kinahanglan arun maka apply ka: \na. Application Form nga naa passport-size nga picture. Ma-download nimo ang Application Form dinhi [insert link] Concert Form. Ma-download ang form dinhi [insert link] \nb. Transcript of Records \nc. Cumulative Grade Point Average (CGPA) or Grade Weighted Average (GWA) nga gi-certify sa school register kung aha ka ni-graduate kung kini wala nakabutang sa imong TOR. \nd. Birth Certificate \ne. Marriage Certificate kung minyo na. \nf. Transfer Credential o Honorable Dismissal. \ng. Duha ka Recommendation Letters nga gikan sa imong employer, Human Resource Officer o mga professors sa una. \nh. Kopya sa imong research output."]
+         "responses": ["Andama ning mga dokumento nga kinahanglan arun maka apply ka: <br>a. Application Form nga naa passport-size nga picture. Ma-download nimo ang Application Form <a href='https://my.dlsu.edu.ph/admissions/graduate/applicationform/introduction.aspx'>dinhi</a> <br>b. Consent Form nga ma-download <a href=https://www.dlsu.edu.ph/wp-content/uploads/2018/09/gs-consent-form-short.pdf'>dinhi </a> <br>c. Transcript of Records <br>d. Cumulative Grade Point Average (CGPA) or Grade Weighted Average (GWA) nga gi-certify sa school register kung aha ka ni-graduate kung kini wala nakabutang sa imong TOR. <br>e. Birth Certificate <br>f. Marriage Certificate kung minyo na. <br>g. Transfer Credential o Honorable Dismissal. <br>h. Duha ka Recommendation Letters nga gikan sa imong employer, Human Resource Officer o mga professors sa una. <br>i. Kopya sa imong research output."]
         },
         {"tag": "new_reqlinks",
-         "responses": ["Makit-an ang mga requirements sa link nga ni: https://www.dlsu.edu.ph/admissions/graduate/requirements-checklist-for-local-applicants/"]
+         "responses": ["Makit-an ang mga requirements sa link nga ni: <a href='https://www.dlsu.edu.ph/admissions/graduate/requirements-checklist-for-local-applicants'/>https://www.dlsu.edu.ph/admissions/graduate/requirements-checklist-for-local-applicants/</a>"]
         },
         {"tag": "new_lackingreq",
          "responses": ["Gawas sa Honorable Dismissal o Transfer credential, kinahanglan nga kumpletuhon na daan ang mga requirements ayha kini i-sumiter. Dili atimanun ang imong application kung naa’y kulang."]
         },
         {"tag": "new_submitreco",
-         "responses": ["Ang recommendation forms kay kinahanglan i-sumiter sa Recommender/Rater sa Office of Scholarships and Admissions pinaagi sa pag-upload sa submission link https://bit.ly/3LfxlTG \nAng aplikante na ang maigo nga makigkomunikar sa iyang mga Recommenders or Raters."]
+         "responses": ["Ang recommendation forms kay kinahanglan i-sumiter sa Recommender/Rater sa Office of Scholarships and Admissions pinaagi sa pag-upload sa <a href='https://bit.ly/3LfxlTG'>submission link </a> <br>Ang aplikante na ang maigo nga makigkomunikar sa iyang mga Recommenders or Raters."]
         },
         {"tag": "new_applicationperiod",
          "responses": ["Ang Application Period para sa Term 2, AY022-2023 kay magsugod ug September 17, 2022 hangtud October 15, 2022."]
         },
         {"tag": "new_applicationprocess",
-         "responses": ["Andama sa daan ang imong mga requirements ug i-sumiter kini pinaagi sa submission link nga ni: \nhttps://bit.ly/3TU1L1I. \nTanang upload kay ihatag sa screening committee sa department arun ma-review nila. Ang review kay himuon usa ka semana paghuman sa deadline sa application."]
+         "responses": ["Andama sa daan ang imong mga requirements ug i-sumiter kini pinaagi sa <a href='https://bit.ly/3TU1L1I'>submission link </a> <br>Tanang upload kay ihatag sa screening committee sa department arun ma-review nila. Ang review kay himuon usa ka semana paghuman sa deadline sa application."]
         },
         {"tag": "new_applicationfee",
-         "responses": ["Bayri ang Non-Refundable nga Application Fee nga 600.00. Para sa proseso sa pagbayad, sunda ni nga mga instructions. [insert link]"]
+         "responses": ["Bayri ang Non-Refundable nga Application Fee nga 600.00. Para sa proseso sa pagbayad, sunda ni nga mga <a href='https://www.dlsu.edu.ph/offices/accounting/official-payment-channels/'>instructions</a>. "]
         },
         {"tag": "new_examresult",
          "responses": ["Ang result sa examination para sa 2nd Term AY 2022-2023 kay ipadala sa imong email sa December 2022."]
         },
         {"tag": "new_exam",
-         "responses": ["Tanang aplikante kay kinahanglan mukuha sa DLSU Graduate Admission Test (DGAT) nga pagahimuon sa De La Salle University. Walay online exam nga kapilian. \nIg sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug imong test permit."]
+         "responses": ["Tanang aplikante kay kinahanglan mukuha sa DLSU Graduate Admission Test (DGAT) nga pagahimuon sa De La Salle University. Walay online exam nga kapilian. <br>Ig sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug imong test permit."]
         },
         {"tag": "new_examschedule",
          "responses": ["Ig sumiter nimo sa imong Application Documents kay makadawat ka ug email mahitungod sa schedule sa imong exam ug ang imong test permit."]
@@ -48,13 +51,22 @@
          "responses": ["Ginadawat sa programa ang mga aplikante nga adunay degree sa MS sa Computer Science nga adunay thesis ug labing menos usa ka research paper nga gi-publish sa usa ka nasyonal o internasyonal nga refereed CS conference."]
         },
         {"tag": "new_notmscs",
-         "responses": ["Ang mga degree sa master gikan sa mosunod nga mga programa mahimong konsiderahon alang sa pagsulod sa Ph.D. in Computer Science (ang uban mahimong konsiderahon sa usa ka case-to-case basis) pagkahuman sa gikinahanglan nga remedial coursework/s: \n1. MS in Computer Science (MSCS) nga wala’y thesis \n2. Master in Computer Science (MCS) \n3. MS in Information Technology (MSIT) \n4. BSCS with an MS degree sa ubang fields \n5. BS and MS degree sa ubang field pero naay IT experience"]
+         "responses": ["Ang mga degree sa master gikan sa mosunod nga mga programa mahimong konsiderahon alang sa pagsulod sa Ph.D. in Computer Science (ang uban mahimong konsiderahon sa usa ka case-to-case basis) pagkahuman sa gikinahanglan nga remedial coursework/s: <br>1. MS in Computer Science (MSCS) nga wala’y thesis <br>2. Master in Computer Science (MCS) <br>3. MS in Information Technology (MSIT) <br>4. BSCS with an MS degree sa ubang fields <br>5. BS and MS degree sa ubang field pero naay IT experience"]
         },
         {"tag": "new_confirmation",
-         "responses": ["Kini ang proseso sa pagmatuod sa imong interes nga magpalista sa Ph.D. in Computer Science. \nBayri ang P1000.00 nga non-refundable Confirmation Fee. \nI-sumiter ang hard copy sa Admission Requirement sa Office of Scholarships and Admissions. \nKuha-a ang Confirmation Kit nga naglangkob sa Department Recommendation Form ug Pre-enrollment Guidelines. Nakabutang ang mga kurso nga pwede nimo i-enroll karung termino sa Department Recommendation form."]
+         "responses": ["Kini ang proseso sa pagmatuod sa imong interes nga magpalista sa Ph.D. in Computer Science. <br>Bayri ang P1000.00 nga non-refundable Confirmation Fee. <br>I-sumiter ang hard copy sa Admission Requirement sa Office of Scholarships and Admissions. <br>Kuha-a ang Confirmation Kit nga naglangkob sa Department Recommendation Form ug Pre-enrollment Guidelines. Nakabutang ang mga kurso nga pwede nimo i-enroll karung termino sa Department Recommendation form."]
         },
         {"tag": "new_defer",
-         "responses": ["Ang mga aplikante nga nakahukom sa paglangan sa pagpalista gihangyo sa \na.Likayan ang pag-apil sa online nga pagrehistro o pag-enrol sa bisan unsang kurso \nb.Basaha ang Graduate Reprocessing Procedures ug sunda ang mga instruksiyon nga nakasulat niini nga link:https://www.dlsu.edu.ph/admissions/graduate/graduatereprocessing-procedures \nAng pagkapakyas sa pagbuhat sa bisan unsa niini mahimong moresulta sa dugang nga mga bayranan ug bayad sa silot."]
+         "responses": ["Ang mga aplikante nga nakahukom sa paglangan sa pagpalista gihangyo sa <br>a.Likayan ang pag-apil sa online nga pagrehistro o pag-enrol sa bisan unsang kurso <br>b.Basaha ang <a href='https://www.dlsu.edu.ph/admissions/graduate/graduatereprocessing-procedures'>Graduate Reprocessing Procedures ug sunda ang mga instruksiyon nga nakasulat niini. <br>Ang pagkapakyas sa pagbuhat sa bisan unsa niini mahimong moresulta sa dugang nga mga bayranan ug bayad sa silot."]
+        },
+        {"tag": "new_totalunits",
+         "responses": ["Alang sa mga aplikante nga adunay degree sa Master of Science sa Computer Science nga adunay thesis, 36 units (24 units nga Specialized Courses ug 12 units nga Dissertation). <br>Alang sa mga aplikante nga adunay degree sa Master of Science sa Computer Science o Master sa Computer Science nga wala’y research-based thesis, ang remedial academic requirements sa dili pa mosulod sa PhD program proper kay 9 units (6 units nga Remedial Courses ug 3 units nga Methods of Research). <br>Alang sa mga aplikante nga adunay degree sa Master of Science sa Information Technology, o BSCS nga adunay non-MSCS degree, o non-BSCS ug non-MSCS degree apan adunay kasinatian sa IT, ang remedial academic nga mga kinahanglanon sa dili pa mosulod sa PhD nga programa kay 18 units (15 units nga Remedial Courses ug 3 units nga Methods of Research)."]
+        },
+        {"tag": "new_terms",
+         "responses": ["Ang PhD nga programa gitanyag sa usa ka trimestral nga basehan. Ang 1st term magsugod sa Septiyembre."]
+        },
+        {"tag": "new_duration",
+         "responses": ["Ang gitakda nga gidaghanon sa mga tuig aron makompleto ang programa magdepende sa akademikong background sa estudyante ug gitakda nga program of study. Labing menos tulo ka tuig ang ginatakda nga panahon sa pagkompleto sa programa."]
         }
    ]
 }
