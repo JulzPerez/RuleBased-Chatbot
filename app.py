@@ -23,6 +23,7 @@ def loadRules():
 #get corresponding tag from triggered regex rule
 def getTag(msg): 
     rules=loadRules() #will load Rules each time, optimize this 
+    intent = "" #will return empty string if no rule matched
     for i in rules.keys():
         pattern = rules[i]['regex']
         if(re.search(pattern,msg)):
@@ -31,15 +32,21 @@ def getTag(msg):
         
     return intent
 
-#get response based on intent (i.e. tag associated with user message)
+#get response based on intent or tag (i.e. tag associated with user message)
 def getResponse(msg):
     tag = getTag(msg)
     result = msg
     list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if(i['tag']== tag):
-            result = random.choice(i['responses'])
-            break
+    if (tag == ""): #no rule matched, hence ask for clarification
+        msg = ["Palihug isulat pag-usab ang imong pangutana ug dugangi ang mga detalye aron akong masabtan kini.", "Wala ko kasabot sa imong pangutana. Palihug ug dungag ug detalye."]
+        result = random.choice(msg)
+    else:
+        for i in list_of_intents:
+            if(i['tag']== tag):
+                result = random.choice(i['responses'])
+                break
+
+    
     return result
 
 
