@@ -1,7 +1,7 @@
 import json
 import re
 import random
-
+import sys
 
 data_file = open('data.json').read()
 intents_json = json.loads(data_file)
@@ -14,9 +14,9 @@ def loadRules():
     x=1
     for line in rLine:
         regex, tag = line.split()
-
         rules_dict[x] = {'regex': regex, 'tag': tag}
         x=x+1
+
 
     return (rules_dict) 
 
@@ -26,8 +26,12 @@ def getTag(msg):
     intent = "" #will return empty string if no rule matched
     for i in rules.keys():
         pattern = rules[i]['regex']
+        print(pattern,msg, file=sys.stderr)
+        
         if(re.search(pattern,msg)):
             intent = rules[i]['tag']
+            print("found!",pattern, file=sys.stderr)
+            print("intent: ",intent, file=sys.stderr)
             break
         
     return intent
@@ -65,7 +69,7 @@ def index():
 
 @app.route("/getResponse")
 def get_bot_response():
-    userText = request.args.get('msg')
+    userText = request.args.get('msg')    
     return chatbot_response(userText.lower())
 
 #if __name__ == "__main__":

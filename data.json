@@ -67,6 +67,19 @@
         },
         {"tag": "new_duration",
          "responses": ["Ang gitakda nga gidaghanon sa mga tuig aron makompleto ang programa magdepende sa akademikong background sa estudyante ug gitakda nga program of study. Labing menos tulo ka tuig ang ginatakda nga panahon sa pagkompleto sa programa."]
+        },
+        {"tag": "returnee_primary_inquire",
+         "responses": ["Welcome returnee! Salamat sa pag pangutana. Ang proseso ma basa <a href=\"https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_gs.pdf\">dinhi nga dokumento</a> . Mas maayo kung na activate na ang imong MLS account para ma sayon sundon ang proseso. <br> Kung buot ka nga mu enroll bilang returnee, palihug ug fill up ani nga <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf19G_NfhLsAK-YVfXJdKOp3yYchCWFZ3QBdkaP6Yw2RuTuaw/viewform?usp=mail_form_link\">form.</a>"]
+        },
+        {"tag": "returnee_primary_mls",
+         "responses": ["Mao na ang My La Salle system. Mamahimo nimo ning ma activate pinaagi sa pag bisita sa https://my.dlsu.edu.ph/create_account.asp."]
+        },
+        {"tag": "payment",
+         "responses": ["Mamahimung sundon ang proseso sa pag bayad nga anaa dinhi nga website: https://www.dlsu.edu.ph/offices/accounting/official-payment-channels/"]
+        },
+        {"tag": "returnee_activate_mls",
+         "responses": ["Para ma activate imong MLS, palihug sa pagsunod sa maong proseso: <br><br>Una, pag pa evaluate sa Academic Programming Officer sa imong college <br><br> Ikaduha, pag Cleared ka na, maka dawat ka ug email para sa activation sa imong MLS account ug ang petsa kung kanus-a ka maka buhat sa imong online enrollment<br><br> Ikatulo, pag-Enroll online gamit ang imong animo.sys human sa activation sa imong MLS (gawas kung ang imong enrollment pinaagi sa gform submission sama sa WCE, OCE, Defense etc)<br>"]
         }
+        
    ]
 }

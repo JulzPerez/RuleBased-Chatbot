@@ -15,7 +15,7 @@
 \A(application\speriod)\b new_applicationperiod
 \b((ganus-?a)|(open)|(kanus-?a)).*\b(application\s?(period)?).* new_applicationperiod
 \b((ganus-?a)|(pwede)).*\b(mag-?apply).* new_applicationperiod
-(\A(requirements?)\b)|((.*)(unsa)|(list).*(requirements?).*) new_requirement
+(\A(requirements?)\b)|((.*)(unsa).*(list).*(requirements?).*) new_requirement
 ((\baha)|(\blink)).*\brequirement.* new_reqlinks
 (((\bwala)|(\bkulang)).*\b((TOR)|(tor)|(transcript)|(birth)|(recommendation)|(requirement)).*) new_lackingreq
 (((\baha)|(\bsubmit)).*\brecommendation).* new_submitreco
@@ -25,3 +25,7 @@
 (hello) start
 ((.*)(wala).*(pangutana).*)|((.*)((salamat)|(thank\syou)).*) goodbye
 (.*)(ok|okay).* misc
+.*activate.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_activate_mls
+(^unsa|^process|^proseso|^processo|^proceso).*((returnee|balik)$|(returnee|balik)\?$) returnee_primary_inquire
+^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_primary_mls
+.*bayad.* payment
