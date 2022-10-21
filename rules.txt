@@ -25,7 +25,12 @@
 (hello) start
 ((.*)(wala).*(pangutana).*)|((.*)((salamat)|(thank\syou)).*) goodbye
 (.*)(ok|okay).* misc
-.*activate.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_activate_mls
-(^unsa|^process|^proseso|^processo|^proceso).*((returnee|balik)$|(returnee|balik)\?$) returnee_primary_inquire
-^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_primary_mls
-.*bayad.* payment
+
+#**********************************************
+# This part is for the rules for returnee
+#**********************************************
+.*activate.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_generic_activate_mls
+(^unsa|^process|^proseso|^processo|^proceso).*((returnee|balik)$|(returnee|balik)\?$) returnee_generic_inquire
+^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_generic_mls
+.*bayad.* returnee_generic_payment
+^unsa.*((gmail|email)$|(gmail|email)\?$) returnee_generic_gmail
