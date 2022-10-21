@@ -20,10 +20,13 @@ def loadRules():
     rLine = myFile.readlines()
     rules_dict = {}
     x=1
-    print(
-        "current_client: ",session["current_client"],
-        "\ncurrent_msg_level: ",session["current_msg_level"],
-        "\n",file=sys.stderr)
+    #print(
+    #    "current_client: ",session["current_client"],
+    #    "\ncurrent_msg_level: ",session["current_msg_level"],
+    #    "\n",file=sys.stderr)
+
+    thisClient = session["current_client"]
+    thisLevel = session["current_msg_level"]
 
     for line in rLine:
         if line.strip()=="" or "#" in line: #skip blank lines and comments
@@ -31,19 +34,21 @@ def loadRules():
 
         regex, tag = line.split()
         
-        if current_msg_level=="generic":
-            if(("_first_" in tag and current_client in tag) or ("generic" in tag and current_client in tag)):
+        if thisLevel =="generic":
+
+            if(("_first_" in tag and thisClient in tag) or ("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
+            
             
             elif("generic" in tag):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
         
-        elif current_msg_level=="first":
-            if(("_second_" in tag and current_client in tag)("generic" in tag and current_client in tag)):
+        elif thisLevel=="first":
+            if(("_second_" in tag and thisClient in tag)("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
 
-        elif current_msg_level=="second":
-            if(("_third_" in tag and current_client in tag)("generic" in tag and current_client in tag)):
+        elif thisLelve=="second":
+            if(("_third_" in tag and thisClient in tag)("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
 
 
@@ -54,7 +59,7 @@ def loadRules():
 #get corresponding tag from triggered regex rule
 def getTag(msg): 
     rules=loadRules() #will load Rules each time, optimize this 
-    print("rules: ",rules,file=sys.stderr)
+    #print("rules: ",rules,file=sys.stderr)
     intent = "" #will return empty string if no rule matched
     for i in rules.keys():
         pattern = rules[i]['regex']
