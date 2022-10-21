@@ -1,31 +1,37 @@
-(.*)((tuig)|(kadugay)).*(human).* new_duration
-(.*)(semestral)|(trimestral).* new_terms
-(.*)(pila).*(units?) new_totalunits
-(.*(defer).*)|(.*)?(dili).*(enroll?).* new_defer
-.*(confirm)|(confirmation)|(kumpirma).* new_confirmation
-.*(letter).*(acceptance).* new_confirmation
-(.*)?((dili)|(lahi)|(lain)).*((mscs)|(masters?)|(kurso)|(ms)).* new_notmscs
-.*(qualifications?)|(qualify).* new_qualification
-\b(ganus-?a).*(entrance\s)?(exam(ination)?).* new_examschedule
-(entrance\s)?(exam(ination)?).* new_exam
-.*(release)|(hatag).*\b(result) new_examresult
-(application\sfee)|(.*((bayad)|(pila)).*\b(application(\sfee)?).*) new_applicationfee
-.*((submit)|(pasa)).*\b(requirements?) new_applicationprocess
-\b(((pa)?unsa(on)?)).*\b((m|p|mu)(ag-?)?apply).* new_applicationprocess
-\A(application\speriod)\b new_applicationperiod
-\b((ganus-?a)|(open)|(kanus-?a)).*\b(application\s?(period)?).* new_applicationperiod
-\b((ganus-?a)|(pwede)).*\b(mag-?apply).* new_applicationperiod
-(\A(requirements?)\b)|((.*)(unsa).*(list).*(requirements?).*) new_requirement
-((\baha)|(\blink)).*\brequirement.* new_reqlinks
-(((\bwala)|(\bkulang)).*\b((TOR)|(tor)|(transcript)|(birth)|(recommendation)|(requirement)).*) new_lackingreq
-(((\baha)|(\bsubmit)).*\brecommendation).* new_submitreco
-\Aa\b status_a
-\Ab\b status_b
-\Ac\b status_c
+########################
+# Rules for Applicants #
+########################
+(.*)((tuig)|(kadugay)).*(human).* new_generic_duration
+(.*)(semestral)|(trimestral).* new_generic_terms
+(.*)(pila).*(units?) new_generic_totalunits
+(.*(defer).*)|(.*)?(dili).*(enroll?).* new_generic_defer
+.*(confirm)|(confirmation)|(kumpirma).* new_generic_confirmation
+.*(letter).*(acceptance).* new_generic_confirmation
+(.*)?((dili)|(lahi)|(lain)).*((mscs)|(masters?)|(kurso)|(ms)).* new_generic_notmscs
+.*(qualifications?)|(qualify).* new_generic_qualification
+\b(ganus-?a).*(entrance\s)?(exam(ination)?).* new_generic_examschedule
+(entrance\s)?(exam(ination)?).* new_generic_exam
+.*(release)|(hatag).*\b(result) new_generic_examresult
+(application\sfee)|(.*((bayad)|(pila)).*\b(application(\sfee)?).*) new_generic_applicationfee
+.*((submit)|(pasa)).*\b(requirements?) new_generic_applicationprocess
+\b(((pa)?unsa(on)?)).*\b((m|p|mu)(ag-?)?apply).* new_generic_applicationprocess
+\A(application\speriod)\b new_generic_applicationperiod
+\b((ganus-?a)|(open)|(kanus-?a)).*\b(application\s?(period)?).* new_generic_applicationperiod
+\b((ganus-?a)|(pwede)).*\b(mag-?apply).* new_generic_applicationperiod
+(\A(requirements?)\b)|((.*)((unsa)|(list)).*(requirements?).*) new_generic_requirement
+((\baha)|(\blink)).*\brequirement.* new_generic_reqlinks
+(((\bwala)|(\bkulang)).*\b((TOR)|(tor)|(transcript)|(birth)|(recommendation)|(requirement)).*) new_generic_lackingreq
+(((\baha)|(\bsubmit)).*\brecommendation).* new_generic_submitreco
+\Aa\b new_generic_welcome
 (hello) start
-((.*)(wala).*(pangutana).*)|((.*)((salamat)|(thank\syou)).*) goodbye
-(.*)(ok|okay).* misc
-.*activate.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_activate_mls
-(^unsa|^process|^proseso|^processo|^proceso).*((returnee|balik)$|(returnee|balik)\?$) returnee_primary_inquire
-^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_primary_mls
-.*bayad.* payment
+((.*)(wala).*(pangutana).*)|((.*)((salamat)|(thank\syou)).*) new_generic_goodbye
+(.*)(ok|okay).* new_generic_misc
+
+#**********************************************
+# This part is for the rules for returnee
+#**********************************************
+.*activate.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_generic_activate_mls
+(^unsa|^process|^proseso|^processo|^proceso).*((returnee|balik)$|(returnee|balik)\?$) returnee_generic_inquire
+^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_generic_mls
+.*bayad.* returnee_generic_payment
+^unsa.*((gmail|email)$|(gmail|email)\?$) returnee_generic_gmail
