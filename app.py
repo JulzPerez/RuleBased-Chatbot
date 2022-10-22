@@ -44,11 +44,11 @@ def loadRules():
                 rules_dict[x] = {'regex': regex, 'tag': tag}
         
         elif thisLevel=="first":
-            if(("_second_" in tag and thisClient in tag)("generic" in tag and thisClient in tag)):
+            if(("_second_" in tag and thisClient in tag) or ("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
 
-        elif thisLelve=="second":
-            if(("_third_" in tag and thisClient in tag)("generic" in tag and thisClient in tag)):
+        elif thisLevel=="second":
+            if(("_third_" in tag and thisClient in tag) or ("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
 
 
@@ -59,13 +59,19 @@ def loadRules():
 #get corresponding tag from triggered regex rule
 def getTag(msg): 
     rules=loadRules() #will load Rules each time, optimize this 
-    #print("rules: ",rules,file=sys.stderr)
+    print("rules: ",rules,file=sys.stderr)
     intent = "" #will return empty string if no rule matched
     for i in rules.keys():
         pattern = rules[i]['regex']
 
         if(re.search(pattern,msg)):
             intent = rules[i]['tag']
+            if("_first_" in intent):
+                session["current_msg_level"] = "first"
+            elif("_second_" in intent):
+                session["current_msg_level"] = "second"
+            elif("_third_" in intent):
+                session["current_msg_level"] = "third"
             break
         
     return intent
@@ -74,6 +80,7 @@ def getTag(msg):
 def getResponse(msg):
     tag = getTag(msg)
     print("tag: ",tag,"\nmessage:",msg,file=sys.stderr)
+    print("current_msg_level: ",session["current_msg_level"])
     result = msg
     list_of_intents = intents_json['intents']
     if (tag == ""): #no rule matched, hence ask for clarification

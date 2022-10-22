@@ -35,3 +35,7 @@
 ^unsa.*((mls|my.la.salle|animospace)$|(mls|my.la.salle|animospace)\?$) returnee_generic_mls
 .*bayad.* returnee_generic_payment
 ^unsa.*((gmail|email)$|(gmail|email)\?$) returnee_generic_gmail
+^salamat|^thank.you|^thanks.* returnee_generic_end
+(^unsaon|^tabangi).*((enrol|enroll)$|(enrol|enroll)\?$) returnee_first_inquire1
+(^oo|^duna|^naa|^yes) returnee_second_inquire1a
+(^wala|^wa|^nada|^no) returnee_second_inquire1b
