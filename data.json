@@ -69,7 +69,7 @@
          "responses": ["Ang gitakda nga gidaghanon sa mga tuig aron makompleto ang programa magdepende sa akademikong background sa estudyante ug gitakda nga program of study. Labing menos tulo ka tuig ang ginatakda nga panahon sa pagkompleto sa programa."]
         },
         {"tag": "returnee_generic_inquire",
-         "responses": ["Uy welcome back! Salamat sa pag pangutana. Ang proseso ma basa <a href=\"https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_gs.pdf\">dinhi nga dokumento</a> . Mas maayo kung na activate na ang imong MLS account para ma sayon sundon ang proseso. <br> Kung buot ka nga mu enroll bilang returnee, palihug ug fill up ani nga <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf19G_NfhLsAK-YVfXJdKOp3yYchCWFZ3QBdkaP6Yw2RuTuaw/viewform?usp=mail_form_link\">form.</a>",
+         "responses": ["Uy welcome back! Ang proseso ma basa <a href=\"https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_gs.pdf\">dinhi nga dokumento</a> . Mas maayo kung na activate na ang imong MLS account para ma sayon sundon ang proseso. <br> Kung buot ka nga mu enroll bilang returnee, palihug ug fill up ani nga <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf19G_NfhLsAK-YVfXJdKOp3yYchCWFZ3QBdkaP6Yw2RuTuaw/viewform?usp=mail_form_link\">form.</a>",
                 "Salamat sa pag balik. Para ma sugdan ang imong enrollment, kinahanglan nga active imong Gmail. Kung dili ni active, palihug ug gamit sa imong personal nga email account. Pagpadala ug kopya sa imong DLSU ID sa Academic Program Officer sa imong college. Pag na activate na imong DLSU Gmail, gi kinahanglan nga mag fill-up ka sa returnee forms depende sa imong college: <br> <a href=\"http://bit.ly/Returnee_BAGCED\">BAGCED</a><br><a href=\"http://bit.ly/Returnee_CCS\">CCS</a><br><a href=\"http://bit.ly/Returnee_CLA\">CLA</a><br><a href=\"http://bit.ly/Returnee_GCOE\">GCOE</a><br><a href=\"http://bit.ly/Returnee_COS\">COS</a><br><a href=\"http://bit.ly/Returnee_RVRCOB\">RVRCOB</a>"]
         },
         {"tag": "returnee_generic_mls",
@@ -82,8 +82,21 @@
          "responses": ["Para ma activate imong MLS, palihug sa pagsunod sa maong proseso: <br><br>Una, pag pa evaluate sa Academic Programming Officer sa imong college <br><br> Ikaduha, pag Cleared ka na, maka dawat ka ug email para sa activation sa imong MLS account ug ang petsa kung kanus-a ka maka buhat sa imong online enrollment<br><br> Ikatulo, pag-Enroll online gamit ang imong animo.sys human sa activation sa imong MLS (gawas kung ang imong enrollment pinaagi sa gform submission sama sa WCE, OCE, Defense etc)<br>"]
         },
         {"tag": "returnee_generic_gmail",
-         "responses": ["Para ma activate imong GMail, palihug sa pagsunod sa maong proseso: <br><br>Una, pag pa evaluate sa Academic Programming Officer sa imong college <br><br> Ikaduha, pag Cleared ka na, maka dawat ka ug email para sa activation sa imong MLS account ug ang petsa kung kanus-a ka maka buhat sa imong online enrollment<br><br> Ikatulo, pag-Enroll online gamit ang imong animo.sys human sa activation sa imong MLS (gawas kung ang imong enrollment pinaagi sa gform submission sama sa WCE, OCE, Defense etc)<br>"]
-        }
+         "responses": ["Para ma activate imong GMail, palihug sa pagsunod sa maong proseso: <br><br>Ipadala ang kopya sa imong DLSU ID gamit imong personal nga email ngadto sa Academic Programming Officer sa imong college.<br>"]
+        },
+        {"tag": "returnee_generic_end",
+         "responses": ["Walay sapayan. Kalipay ko ang mu alagad nimo."]
+        },
+        {"tag": "returnee_first_inquire1",
+         "responses": ["Para ma alagaran taka, aduna ka na bay active nga DLSU GMail account?"]
+        },
+        {"tag": "returnee_second_inquire1a",
+         "responses": ["Ahh maayo kay aduna ka nay DLSU Gmail account. Ang sunod nimong buhaton kay mag fill-up sa Google Form gamit imong DLSU Gmail Account. Mag depende kini kung asa ka nga college nahiimutang. Palihug sa pag tan-aw sa links sa ubos.<br> <a href=\"http://bit.ly/Returnee_BAGCED\">BAGCED</a><br><a href=\"http://bit.ly/Returnee_CCS\">CCS</a><br><a href=\"http://bit.ly/Returnee_CLA\">CLA</a><br><a href=\"http://bit.ly/Returnee_GCOE\">GCOE</a><br><a href=\"http://bit.ly/Returnee_COS\">COS</a><br><a href=\"http://bit.ly/Returnee_RVRCOB\">RVRCOB</a> "]
+        },
+        {"tag": "returnee_second_inquire1b",
+         "responses": ["Kinahanglan nga active imong DLSU Gmail account. Para ma activate kini, palihog sa pag padala sa kopya sa imong DLSU ID gamit imong personal nga email ngadto sa Academic Programming Officer sa imong college. "]
+        }        
+
  
    ]
 }
