@@ -33,7 +33,7 @@
          "responses": ["Ang Application Period para sa Term 2, AY022-2023 kay magsugod ug September 17, 2022 hangtud October 15, 2022."]
         },
         {"tag": "new_generic_applicationprocess",
-         "responses": ["Andama sa daan ang imong mga requirements ug i-sumiter kini pinaagi sa <a href='https://bit.ly/3TU1L1I'>submission link </a> <br>Tanang upload kay ihatag sa screening committee sa department arun ma-review nila. Ang review kay himuon usa ka semana paghuman sa deadline sa application."]
+         "responses": ["Isip bag-ong aplikante, andama sa daan ang imong mga requirements ug i-sumiter kini pinaagi sa <a href='https://bit.ly/3TU1L1I'>submission link </a> <br>Tanang upload kay ihatag sa screening committee sa department arun ma-review nila. Ang review kay himuon usa ka semana paghuman sa deadline sa application."]
         },
         {"tag": "new_generic_applicationfee",
          "responses": ["Bayri ang Non-Refundable nga Application Fee nga 600.00. Para sa proseso sa pagbayad, sunda ni nga mga proseso <a href='https://www.dlsu.edu.ph/offices/accounting/official-payment-channels/'>instructions</a>. "]
@@ -67,6 +67,12 @@
         },
         {"tag": "new_generic_duration",
          "responses": ["Ang gitakda nga gidaghanon sa mga tuig aron makompleto ang programa magdepende sa akademikong background sa estudyante ug gitakda nga program of study. Labing menos tulo ka tuig ang ginatakda nga panahon sa pagkompleto sa programa."]
+        },
+        {"tag": "new_generic_examfee",
+         "responses": ["Walay bulag nga bayad para sa DLSU Graduate Admission Test. Kinahanglan lang bayran ang application fee nga 600.00."]
+        },
+        {"tag": "new_generic_appform",
+         "responses": ["Ma-download nimo ang Application Form <a href='https://my.dlsu.edu.ph/admissions/graduate/applicationform/introduction.aspx'>dinhi</a>. Butangi kini ug passport-size nga picture."]
         },
         {"tag": "returnee_generic_inquire",
          "responses": ["Uy welcome back! Ang proseso ma basa <a href=\"https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_gs.pdf\">dinhi nga dokumento</a> . Mas maayo kung na activate na ang imong MLS account para ma sayon sundon ang proseso. <br> Kung buot ka nga mu enroll bilang returnee, palihug ug fill up ani nga <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf19G_NfhLsAK-YVfXJdKOp3yYchCWFZ3QBdkaP6Yw2RuTuaw/viewform?usp=mail_form_link\">form.</a>",
