@@ -1,6 +1,8 @@
 ########################
 # Rules for Applicants #
 ########################
+(.*)(application\sform).* new_generic_appform
+((.*)((pila)|(bayad)|(bayran)).*(exam(ination)?))|((.*)(exam(ination)?\sfee).*) new_generic_examfee
 (.*)((tuig)|(kadugay)).*(human).* new_generic_duration
 (.*)(semestral)|(trimestral).* new_generic_terms
 (.*)(pila).*(units?) new_generic_totalunits
@@ -9,12 +11,12 @@
 .*(letter).*(acceptance).* new_generic_confirmation
 (.*)?((dili)|(lahi)|(lain)).*((mscs)|(masters?)|(kurso)|(ms)).* new_generic_notmscs
 .*(qualifications?)|(qualify).* new_generic_qualification
-\b(ganus-?a).*(entrance\s)?(exam(ination)?).* new_generic_examschedule
+(\b(ganus-?a))|((pa)?unsa).*(apply)?.*(entrance\s)?(exam(ination)?).* new_generic_examschedule
 (entrance\s)?(exam(ination)?).* new_generic_exam
 .*(release)|(hatag).*\b(result) new_generic_examresult
 (application\sfee)|(.*((bayad)|(pila)).*\b(application(\sfee)?).*) new_generic_applicationfee
 .*((submit)|(pasa)).*\b(requirements?) new_generic_applicationprocess
-\b(((pa)?unsa(on)?)).*\b((m|p|mu)(ag-?)?apply).* new_generic_applicationprocess
+((\b(((pa)?unsa(on)?)))|(ganahan)).*((m|p|mu-?)(ag-?))?((apply)|(enroll?)).* new_generic_applicationprocess
 \A(application\speriod)\b new_generic_applicationperiod
 \b((ganus-?a)|(open)|(kanus-?a)).*\b(application\s?(period)?).* new_generic_applicationperiod
 \b((ganus-?a)|(pwede)).*\b(mag-?apply).* new_generic_applicationperiod
