@@ -14,6 +14,7 @@ intents_json = json.loads(data_file)
 current_client=""
 current_msg_level=""
 
+
 #read regex rules from files
 def loadRules():
     myFile = open('rules.txt','r')
@@ -27,6 +28,7 @@ def loadRules():
 
     thisClient = session["current_client"]
     thisLevel = session["current_msg_level"]
+   
 
     for line in rLine:
         if line.strip()=="" or "#" in line: #skip blank lines and comments
@@ -43,14 +45,14 @@ def loadRules():
             elif("generic" in tag):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
         
-        elif thisLevel=="first":
+        elif thisLevel == "first":
             if(("_second_" in tag and thisClient in tag) or ("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
 
         elif thisLevel=="second":
             if(("_third_" in tag and thisClient in tag) or ("generic" in tag and thisClient in tag)):
                 rules_dict[x] = {'regex': regex, 'tag': tag}
-
+        
 
         x=x+1
 

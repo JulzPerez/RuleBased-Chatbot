@@ -95,7 +95,37 @@
         },
         {"tag": "returnee_second_inquire1b",
          "responses": ["Kinahanglan nga active imong DLSU Gmail account. Para ma activate kini, palihog sa pag padala sa kopya sa imong DLSU ID gamit imong personal nga email ngadto sa Academic Programming Officer sa imong college. "]
-        }        
+        },
+        {"tag": "continuing_generic_welcome",
+         "responses": ["Maayong adlaw diha kanimo. Maayo kay gusto ka mopadayun sa pag enroll. Unsa may imo gusto mahibal-an bahin sa enrollment?"]
+        },
+        {"tag": "continuing_generic_firstStep",
+         "responses": ["Para ka makapadayun ug enroll, dapat nimo una humanon ang imoha clearance basi sa gi-paskin nga schedule."]
+        },
+        {"tag": "continuing_generic_clearanceAskSchedule",
+         "responses": ["Pwede nimo makita ang schedule sa pag process sa clearance gamit ni nga link: https://www.dlsu.edu.ph/offices/registrar/schedules/"]
+        },
+        {"tag": "continuing_generic_nextToClearance",
+         "responses": ["Mosunod ang pag kontak sa imo adviser. Or pwede nga kontakon nmu ang imo adviser dungan sa pag pa clearance."]
+        },
+        {"tag": "continuing_generic_contactAdviserWhileWorkingClearance",
+         "responses": ["Pwede kaayo nga kontakon nimo daan ang imo adviser dungan sa pag pa clearance."]
+        },
+        {"tag": "continuing_generic_enrollmentSchedule",
+         "responses": ["Para sa schedule sa enrollment, pwede nimo ibrowse ni nga page: https://www.dlsu.edu.ph/offices/registrar/schedules/"]
+        },
+        {"tag": "continuing_generic_askScopeOfOnlineEnrollment",
+         "responses": ["Dili tanan. Ang Thesis/Dissertation Writing ug Defense, special classes and comprehensive examinations kay manual nga i-enroll dadto sa OUR."]
+        },
+        {"tag": "continuing_generic_listOfCourses",
+        "responses": ["Dili makita sa online ang listaan. Mahimo nga imo kontakon ang imo adviser bahin ani. Sa graduate school man gud, nakadepende ang imo subjects sa direction sa imo study. Maong kinahanglan makig coordinate ka niya "]
+        },
+        {"tag": "continuing_generic_canEnrollWithoutClearance",
+         "responses": ["Sorry pero dili ka pwede maka enroll pag dili ka cleared."]
+        },
+        {"tag": "continuing_generic_cannotSeeDissertation",
+         "responses": ["Ang subjects nga dili nimo makita sa listaan sa online enrollment sama sa dissertation or comprehensive exam kinanhanglan i-enroll manually. Mahimo nga mo-koordinar ka sa imo adviser para ani."]
+        }    
 
  
    ]

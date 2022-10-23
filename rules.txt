@@ -39,3 +39,19 @@
 (^unsaon|^tabangi).*((enrol|enroll)$|(enrol|enroll)\?$) returnee_first_inquire1
 (^oo|^duna|^naa|^yes) returnee_second_inquire1a
 (^wala|^wa|^nada|^no) returnee_second_inquire1b
+
+#******************************************
+# Rules for continuing part
+#******************************************
+
+(\bunsay?.*\buna.*\benroll?) continuing_generic_firstStep
+(.*)(\basa.*(.*paskin|[mn]akita).*\bschedule)|(\basa.*(.*)paskin.*\bskedyul) continuing_generic_clearanceAskSchedule
+((.*)\bunsa(.*)(sunod|next).*\bclearance) continuing_generic_nextToClearance
+\bpwede.*enroll?.*((walay?.*clearance)|(\bdili.*cleared)|(\bdili.*\bkompleto.*\bclearance)) continuing_generic_canEnrollWithoutClearance
+((.*)schedule.*on-?line.*enroll?ment)|((.*)schedule.*enroll?ment.*on-?line) continuing_generic_enrollmentSchedule
+((.*)\basa.*makita.*\b(listaan|list|listahan).*(courses|subjects?).*(enroll?)) continuing_generic_listOfCourses
+(.*)\b(wala|dili).*\b(.*kit.*).*(compre.*|dissertation).*(enroll?.*)|(.*)\basa.*\b(enroll?).*\b(dissertation|compre.*) continuing_generic_cannotSeeDissertation
+\Acontinuing\b  continuing_generic_welcome
+
+
+
