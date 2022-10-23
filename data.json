@@ -131,8 +131,10 @@
         },
         {"tag": "continuing_generic_cannotSeeDissertation",
          "responses": ["Ang subjects nga dili nimo makita sa listaan sa online enrollment sama sa dissertation or comprehensive exam kinanhanglan i-enroll manually. Mahimo nga mo-koordinar ka sa imo adviser para ani."]
-        }    
-
+        }  ,  
+        {"tag": "continuing_generic_whatisOUR",
+         "responses": ["Ang OUR mao ang Office of the University Registrar. Pwede nga mo-browse ka ani sa ilang website para sa dugang nga detalye."]
+        } 
  
    ]
 }

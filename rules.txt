@@ -47,12 +47,14 @@
 #******************************************
 
 (\bunsay?.*\buna.*\benroll?) continuing_generic_firstStep
-(.*)(\basa.*(.*paskin|[mn]akita).*\bschedule)|(\basa.*(.*)paskin.*\bskedyul) continuing_generic_clearanceAskSchedule
+(.*)(\basa.*(.*paskin|[mn]akita|post).*\bschedule)|(\basa.*(.*)paskin.*\bskedyul) continuing_generic_clearanceAskSchedule
 ((.*)\bunsa(.*)(sunod|next).*\bclearance) continuing_generic_nextToClearance
 \bpwede.*enroll?.*((walay?.*clearance)|(\bdili.*cleared)|(\bdili.*\bkompleto.*\bclearance)) continuing_generic_canEnrollWithoutClearance
 ((.*)schedule.*on-?line.*enroll?ment)|((.*)schedule.*enroll?ment.*on-?line) continuing_generic_enrollmentSchedule
 ((.*)\basa.*makita.*\b(listaan|list|listahan).*(courses|subjects?).*(enroll?)) continuing_generic_listOfCourses
+(.*)\btanan.*\b(subjects?|kurso|courses).*(enroll?.*)online continuing_generic_askScopeOfOnlineEnrollment
 (.*)\b(wala|dili).*\b(.*kit.*).*(compre.*|dissertation).*(enroll?.*)|(.*)\basa.*\b(enroll?).*\b(dissertation|compre.*) continuing_generic_cannotSeeDissertation
+\b(unsa|asa).*\bour.* continuing_generic_whatisOUR
 \Acontinuing\b  continuing_generic_welcome
 
 
